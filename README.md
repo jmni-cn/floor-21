@@ -4,6 +4,7 @@
 
 
 ## 安装
+https://blog.csdn.net/sanqima/article/details/119121432
 注意：需使用 nodejs 长期维护版本，如：16.13.0 [12.x、14.x、16.x]，能保证项目的稳定运行。
 
 ```bash
