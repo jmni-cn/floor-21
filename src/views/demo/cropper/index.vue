@@ -7,7 +7,7 @@
 			<div class="img-preview"></div>
 		</div>
 		<div style="margin-top: 20px">
-			<el-button type="primary" @click="handleUpload">选择图片</el-button>
+			<el-button type="primary" @click="handleUpload">选择图片....</el-button>
 			<el-button type="primary" @click="handleDownload">下载图片</el-button>
 			<input ref="fileRef" style="display: none" type="file" accept="image/*" @change="handleFileChange" />
 		</div>
