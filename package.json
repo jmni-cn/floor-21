@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -v && vue-tsc --noEmit && vite build",
+    "jenbuild": "vite build",
     "preview": "vite preview",
     "lint": "eslint --fix --ext .vue,.jsx,.ts,.tsx ."
   },
