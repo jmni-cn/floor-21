@@ -33,7 +33,11 @@ export const userStore = defineStore('userStore', {
 		// 获取用户信息
 		async getUserInfoAction() {
 			// const { data } = await useUserInfoApi()
-			this.setUser('48ds4d8s48sd48s84ds48')
+			this.setUser({
+				id: '666',
+				username: 'zzz',
+				avatar: ''
+			})
 		},
 		// 获取权限
 		async getAuthorityListAction() {
