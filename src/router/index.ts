@@ -25,7 +25,28 @@ const constantRoutes: RouteRecordRaw[] = [
 	{
 		path: '/404',
 		component: () => import('../views/404.vue')
+	},
+	{
+		path: '/demo/icons/index',
+		component: () => import('../views/demo/icons/index.vue')
+	},
+	{
+		path: '/demo/qrcode/index',
+		component: () => import('../views/demo/qrcode/index.vue')
+	},
+	{
+		path: '/demo/printJs/index',
+		component: () => import('../views/demo/printJs/index.vue')
+	},
+	{
+		path: '/demo/cropper/index',
+		component: () => import('../views/demo/cropper/index.vue')
+	},
+	{
+		path: '/demo/wangeditor/index',
+		component: () => import('../views/demo/wangeditor/index.vue')
 	}
+	
 ]
 
 const asyncRoutes: RouteRecordRaw = {
