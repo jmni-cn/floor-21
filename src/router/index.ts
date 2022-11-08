@@ -113,7 +113,7 @@ export const router = createRouter({
 })
 
 // 白名单列表
-const whiteList = ['/login', 'demo/icons/index', 'demo/qrcode/index', 'demo/printJs/index', 'demo/cropper/index', 'demo/wangeditor/index']
+const whiteList = ['/login', '/demo/icons/index', '/demo/qrcode/index', '/demo/printJs/index', '/demo/cropper/index', '/demo/wangeditor/index']
 
 // 路由加载前
 router.beforeEach(async (to, from, next) => {
