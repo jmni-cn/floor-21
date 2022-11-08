@@ -149,7 +149,7 @@ router.beforeEach(async (to, from, next) => {
 			if (!store.userStore.user.id) {
 				await store.userStore.getUserInfoAction()
 				await store.userStore.getAuthorityListAction()
-				await store.appStore.getDictListAction()
+				// await store.appStore.getDictListAction()
 				const menuRoutes = await store.routerStore.getMenuRoutes()
 
 				// 根据后端菜单路由，生成KeepAlive路由
