@@ -27,8 +27,9 @@ export const userStore = defineStore('userStore', {
 		},
 		// 用户登录
 		async loginAction(loginForm: any) {
-			const res: any = await useLoginApi(loginForm)
-			this.setToken(res.access_token)
+			// const res: any = await useLoginApi(loginForm)
+			// this.setToken(res.access_token)
+			this.setToken('2fd5d565fddfd55dd4df5')
 		},
 		// 获取用户信息
 		async getUserInfoAction() {
@@ -41,12 +42,13 @@ export const userStore = defineStore('userStore', {
 		},
 		// 获取权限
 		async getAuthorityListAction() {
-			const { data } = await useAuthorityListApi()
-			this.authorityList = data || []
+			// const { data } = await useAuthorityListApi()
+			// this.authorityList = data || []
+			this.authorityList =  ['sys:menu:update', 'sys:menu:delete', 'sys:menu:save']
 		},
 		// 用户退出
 		async logoutAction() {
-			await useLogoutApi()
+			// await useLogoutApi()
 
 			// 移除 token
 			this.setToken(null)
