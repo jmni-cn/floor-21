@@ -150,20 +150,21 @@ router.beforeEach(async (to, from, next) => {
 				await store.userStore.getUserInfoAction()
 				await store.userStore.getAuthorityListAction()
 				// await store.appStore.getDictListAction()
-				const menuRoutes = await store.routerStore.getMenuRoutes()
+				// const menuRoutes = await store.routerStore.getMenuRoutes()
 
 				// 根据后端菜单路由，生成KeepAlive路由
-				const keepAliveRoutes = getKeepAliveRoutes(menuRoutes, [])
+				// const keepAliveRoutes = getKeepAliveRoutes(menuRoutes, [])
 
 				// 添加菜单路由
-				asyncRoutes.children?.push(...keepAliveRoutes)
-				router.addRoute(asyncRoutes)
+				// asyncRoutes.children?.push(...keepAliveRoutes)
+				// router.addRoute(asyncRoutes)
 
 				// 错误路由
 				router.addRoute(errorRoute)
 
 				// 保存路由数据
-				store.routerStore.setRoutes(constantRoutes.concat(asyncRoutes))
+				store.routerStore.setRoutes(constantRoutes)
+				// store.routerStore.setRoutes(constantRoutes.concat(asyncRoutes))
 
 				next({ ...to, replace: true })
 			} else {
